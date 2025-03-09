@@ -1,7 +1,7 @@
 // store.userBooking.js
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/users/book"; // Adjusted to match your backend route
+const API_URL = "https://sivanethunaibackend.onrender.com/api/users/book"; // Adjusted to match your backend route
 
 const userBooking = {
   registerUser: async (formData) => {
