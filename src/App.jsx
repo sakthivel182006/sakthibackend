@@ -27,12 +27,14 @@ function App() {
       let response;
       if (isRegister) {
         response = await userRegister.registerUser(formData);
+        console.log("Registration Response:", response); // Debugging log
         if (response && response.success) {
-          toast.success("Registered successfully!"); // This will show a green toast
+          toast.success("Registered successfully!"); // Green toast
         } else {
           throw new Error(response.message || "Registration failed");
         }
-      } else {
+      }
+      else {
         response = await userRegister.loginUser(formData);
         console.log("Login Response:", response); // Debugging log
         console.log("user id", response.user.id);
