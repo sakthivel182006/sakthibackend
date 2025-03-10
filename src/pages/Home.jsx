@@ -69,7 +69,7 @@ function Home() {
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
           <div className="container">
             <a className="navbar-brand fw-bold" href="#">
-              <i className="bi bi-house-door-fill me-2"></i> MyApp
+              <i className="bi bi-house-door-fill me-2"></i> SIVANE THUNAI TOURS AND TRAVELS
             </a>
 
             {/* Horizontal Dropdown Menu */}
