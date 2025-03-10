@@ -54,7 +54,7 @@ function App() {
       }
     } catch (error) {
       toast.error(error.message); // This will show a red toast for errors
-      console.error("Error submitting form:", error.message);
+    
     }
   };
   
