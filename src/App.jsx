@@ -28,14 +28,14 @@ function App() {
       if (isRegister) {
         response = await userRegister.registerUser(formData);
         if (response && response.success) {
-          toast.success("Registered successfully!");
+          toast.success("Registered successfully!"); // This will show a green toast
         } else {
           throw new Error(response.message || "Registration failed");
         }
       } else {
         response = await userRegister.loginUser(formData);
         console.log("Login Response:", response); // Debugging log
-        console.log("user id",response.user.id);
+        console.log("user id", response.user.id);
   
         if (response && response.user) {
           localStorage.setItem("userId", response.user.id);
@@ -43,14 +43,14 @@ function App() {
           localStorage.setItem("userEmail", response.user.email);
           localStorage.setItem("userPassword", response.user.password);
           localStorage.setItem("loggedIn", "true");
-          toast.success("Login successful!");
+          toast.success("Login successful!"); // This will show a green toast
           navigate("/home");
         } else {
           throw new Error(response.message || "Invalid response from server");
         }
       }
     } catch (error) {
-      toast.error(error.message);
+      toast.error(error.message); // This will show a red toast for errors
       console.error("Error submitting form:", error.message);
     }
   };
