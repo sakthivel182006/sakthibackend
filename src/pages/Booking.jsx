@@ -77,7 +77,7 @@ function Booking({ userId, onClose }) {
 
           <div className="mb-3">
             <label className="form-label fw-bold">
-              <BsCalendar className="me-2 text-secondary" /> Date
+              <BsCalendar className="me-2 text-secondary" /> Date of birth
             </label>
             <input
               type="date"
@@ -90,20 +90,24 @@ function Booking({ userId, onClose }) {
             />
           </div>
 
-          <div className="mb-3">
-            <label className="form-label fw-bold">
-              <FaMapMarkerAlt className="me-2 text-secondary" /> Destination
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              name="destination"
-              placeholder="Enter destination"
-              value={formData.destination}
-              onChange={handleChange}
-              required
-            />
-          </div>
+         <div className="mb-3">
+  <label className="form-label fw-bold">
+    <FaMapMarkerAlt className="me-2 text-secondary" /> Service Type
+  </label>
+  <select
+    className="form-select"
+    name="destination"
+    value={formData.destination}
+    onChange={handleChange}
+    required
+  >
+    <option value="">-- Select Service --</option>
+    <option value="Welding">Welding</option>
+    <option value="Hydraulic Service">Hydraulic Service</option>
+    <option value="Others">Others</option>
+  </select>
+</div>
+
 
           <div className="mb-3">
             <label className="form-label fw-bold">
