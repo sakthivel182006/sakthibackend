@@ -127,7 +127,7 @@ function Booking({ userId, onClose }) {
 
           <div className="mb-3">
             <label className="form-label fw-bold">
-              <BsPeople className="me-2 text-secondary" /> Number of Members
+              <BsPeople className="me-2 text-secondary" /> Number of experience
             </label>
             <input
               type="number"
